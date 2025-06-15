@@ -26,7 +26,7 @@
     .text h2 {
       font-size: 80px;
       position: absolute;
-      top: 180px;
+      top: 280px;
       color: aliceblue;
       font-family: Funnel Display;
       left: 50px;
@@ -34,7 +34,7 @@
 
     .text h1 {
       position: absolute;
-      top: 300px;
+      top: 380px;
       color: aliceblue;
       font-size: 100px;
       font-family: Lexend Giga;
