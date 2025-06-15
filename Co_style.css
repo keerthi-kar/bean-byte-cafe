@@ -1,0 +1,90 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lexend', sans-serif;
+            line-height: 1.6;
+            background-color: #d9ad7c;
+        }
+
+        .heading {
+            background-color: #3e2723;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        
+        }
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .section.reverse {
+            flex-direction: column;
+        }
+
+        .image, .image1 {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .image img, .image1 img {
+            width: 100%;
+            height:580px;
+            display: block;
+        }
+
+        .text, .benefit {
+            max-width: 700px;
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+
+        .benefit h1 {
+            font-size: 3.5rem;
+            color: #3e2723;
+            margin-bottom: 10px;
+            text-align: center;
+           
+        }
+          .text h1 {
+            font-size: 3.5rem;
+            color: #3e2723;
+            margin-bottom: 10px;
+            text-align: center;
+           
+        }
+
+        /* ----------- DESKTOP STYLE ----------- */
+        @media screen and (min-width: 768px) {
+            .section {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+       
+
+            .section.reverse {
+                flex-direction: row-reverse;
+            }
+
+            .text, .benefit {
+                padding: 20px;
+                flex: 1;
+            }
+
+            .image, .image1 {
+                flex: 1;
+            }
+        }
+  

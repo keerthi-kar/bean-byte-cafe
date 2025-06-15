@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=KnowledgeFAQSearch fonts Merienda|Audiowide|Aladin">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ 
+
+    body {
+      background-color: #d9ad7c;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      padding: 20px 0;
+      text-align: center;
+      background-color: #402a23;
+    
+    }
+
+    .navbar h1 {
+      color: #d9ad7c;
+      font-size: 40px;
+      font-family: Aladin;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      /* Default for mobile */
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .container img {
+      width: 100%;
+      height: 350px;
+      /* Increased height */
+      object-fit: cover;
+      /* Maintains aspect ratio by cropping */
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .container img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Tablets */
+    @media (min-width: 768px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Large screens (desktops) */
+    @media (min-width: 1024px) {
+      .container {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <h1> Bean & Byte Cafe&nbsp; -&nbsp; A Glimpse into Our Vibes</h1>
+  </nav>
+  <div class="container">
+    <img src="shop.jpg" alt="Shop" loading="lazy" />
+    <img src="turke.jpg" alt="Turke"  loading="lazy"/>
+    <img src="turkeys.jpg" alt="Turkeys" loading="lazy"/>
+    <img src="coffee.jpg" alt="coffee"  loading="lazy"/>
+    <img src="bean.jpg" alt="Bean"  loading="lazy" />
+    <img src="powder.jpg" alt="powder"  loading="lazy"/>
+    <img src="black.jpg" alt="Black"  loading="lazy"/>
+    <img src="espress.jpg" alt="espress"  loading="lazy"/>
+    <img src="capp.webp" alt="capp"  loading="lazy"/>
+    <img src="make.jpg" alt="make"  loading="lazy"/>
+    <img src="lattes.jpg" alt="lattes"  loading="lazy"/>
+    <img src="flat.jpg" alt="flat"  loading="lazy"/>
+    <img src="latt.jpg" alt="Latt"  loading="lazy"/>
+    <img src="mocha.jpg" alt="Mocha" loading="lazy"/>
+    <img src="hot.jpg" alt="hot"  loading="lazy"/>
+    <img src="frapp.jpg" alt="frapp"  loading="lazy"/>
+    <img src="coffe.jpg" alt="coffe"  loading="lazy"/>
+    <img src="homes.jpg" alt="Homes"  loading="lazy"/>
+    <img src="makes.jpg" alt="makes"  loading="lazy"/>
+    <img src="espre.jpg" alt="espre"  loading="lazy"/>
+    <img src="frap.jpg" alt="frap"  loading="lazy"/>
+    <img src="ice.jpg" alt="Ice"  loading="lazy" />
+    <img src="iced.jpg" alt="Iced"  loading="lazy" />
+    <img src="icela.jpg" alt="icela"  loading="lazy"/>
+    <img src="moch.jpg" alt="moch"  loading="lazy"/>
+    <img src="icelatte.webp" alt="icelatte"  loading="lazy"/>
+    <img src="hots.jpg" alt="hots"  loading="lazy"/>
+    <img src="icedmoch.jpg" alt="icedmoch"  loading="lazy"/>
+  </div>
+</body>
+
+</html>

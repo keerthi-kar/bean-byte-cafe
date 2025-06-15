@@ -1,0 +1,138 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f4e1cd;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #3d2b1f;
+      background-image: url(beanss.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .header h1 {
+      font-size: 52px;
+      margin-bottom: 10px;
+      color: #f4e1cd;
+    }
+
+    .header p {
+      font-size: 20px;
+      color: #fff8f1;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .box-container {
+      background-color: #fff8f1;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      flex: 1;
+    }
+
+    .contact-info p {
+      font-size: 20px;
+      line-height: 2;
+      margin-bottom: 12px;
+   
+    }
+
+    .contact-info b {
+      color: #8b4c39;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      font-size: 30px;
+      color: #8b4c39;
+      text-align: center;
+      
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    form label {
+      font-size: 20px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      background-color: #fff;
+    }
+
+    form textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    .form-button-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    form button {
+      padding: 12px 25px;
+      font-size: 16px;
+      background-color: #3d2b1f;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #a75f47;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: 0;
+      border-radius: 8px;
+      margin-top: 50px;
+    }
+
+    /* Desktop layout */
+    @media (min-width: 1024px) {
+      .main-container {
+        flex-direction: row;
+      }
+
+      iframe {
+        height: 300px;
+      }
+    }

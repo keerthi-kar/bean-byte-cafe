@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=monospace|Fascinate+Inline" />
+  <style>
+    
+    /* Body full height, bg image fixed, centered and cover */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-image: url('about.jpg'); /* image path  */
+      background-repeat: no-repeat;
+      background-size: cover;      /* full screen cover */
+      background-position: center; /* center*/
+      font-family: monospace, sans-serif;
+      color: #fcf8f3;
+      display: flex;
+      justify-content: flex-end;  /* text container right side */
+      align-items: center;         /* vertical center */
+      padding-right: 40px;
+    }
+    
+
+
+    /* Text container size */
+    .container {
+      max-width: 450px;  /* text container size */
+      background: rgba(0, 0, 0, 0.5); /*dull color  */
+      padding: 20px 30px;
+      border-radius: 8px;
+      text-align: right;
+    }
+
+    h1 {
+      font-size: 5.5rem;
+      margin-bottom: 20px;
+      font-family: monospace;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .pr {
+      font-family: 'Fascinate Inline', cursive;
+      font-size: 3rem;
+      margin-top: 30px;
+    }
+    button{
+        background-color: black;
+        color: #fcf8f3;
+        border-radius: 15px;
+      font-size: 18px;
+    }
+    button:hover{
+        color: black;
+        background-color: #fcf8f3;
+    }
+    /* Responsive for small screens */
+    @media (max-width: 768px) {
+      body {
+        justify-content: center; /* text center vara*/
+        padding-right: 0;
+        padding-left: 20px;
+      }
+      .container {
+        max-width: 90%;
+        background: rgba(0,0,0,0.6);
+        text-align: center;
+        padding: 15px 20px;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+      }
+      p, .pr {
+        font-size: 1rem;
+        margin-bottom: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>About</h1>
+    <p>A Cup Of Gourmet Coffee Shared With Friends And Family Is Happiness</p>
+    <p>Welcome to Bean & Byte Cafe, where every cup represents our unwavering commitment to crafting the perfect brew.</p>
+    <p>Nestled in the heart of Tiruchirappalli, we honor the rich tradition of South Indian Filter Coffee with authenticity and admiration.</p>
+    <p>Our journey commenced with a simple yet profound mission:</p>
+    <p>To redefine coffee by prioritizing uncompromising quality and genuine hospitality. In a market saturated with choices, why choose us?</p>
+    <p>Because we don’t merely offer a product; we curate experiences.</p>
+    <p>We understand that a remarkable coffee experience extends beyond the cup; it involves genuine care and attention in every interaction.</p>
+    <p>Whether you’re a regular customer or a first-time visitor, expect a warm welcome and friendly service at Bean & Byte Cafe.</p>
+    <p>Hygiene and cleanliness are non-negotiable values for us, ensuring a pristine environment for the safety and well-being of our patrons and staff.</p>
+    <p class="pr">Coffee &nbsp; To &nbsp; Go !</p>
+      <button onclick="window.location.href='Index.html'">Home</button>
+  </div>
+
+</body>
+</html>

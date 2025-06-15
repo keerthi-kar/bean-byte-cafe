@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*-----font family-----*/
+@font-face{
+    font-family: 'Persona Aura';
+    src: url('project.ttf/Persona\ Aura.otf') format('truetype');
+}
+@font-face{
+        font-family: 'Middle of April';
+    src: url('project.ttf/Middle\ of\ April.ttf') format('truetype');
+}
+@font-face{
+        font-family: 'Roile Twily';
+    src: url('project.ttf/Rolie\ Twily.otf') format('truetype');
+}
+
+
+body{
+    background-image: url("homes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+.navbar{
+    background-color: #f2f2f2;
+    color: #402a23;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.title{
+    font-size: 30px;
+    font-family:Roile Twily;
+   padding-left: 20px;
+   font-weight: bold;
+}
+ul{
+    list-style: none; /*. remove panum*/
+    display: flex; /*orae line varum*/
+    flex-wrap: wrap;
+    gap: 25px;  /* 2 text space varum*/
+    padding-right: 50px;
+    font-family: Merienda;
+    font-weight: bold;
+}
+li a{
+    text-decoration: none;  /*link la kela line varathu*/
+    color: #402a23;
+    font-weight: bold;
+    font-size: 22px;
+}
+li a:hover{
+    color: #606470;
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+   padding: 10vh;
+   color:#f96d00;
+   min-height: calc(100vh-80px);
+}
+h1{
+    font-size: 66px;
+    color: #f3a333;
+    font-family:'Persona Aura';
+}
+h3{
+    font-size: 35px;
+    margin: 20px 0 10px;
+    color: #e3f6f5;
+    font-family:Middle of April;
+}
+p{
+    font-size: 30px;
+    max-width: 600px;
+    margin-bottom: 10px;  
+}
+button{
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #f96d00;
+}
+button:hover{
+    color:#e3f6f5;
+}
+/*mobile responsive*/
+@media (max-width:760px)
+{
+    .text{
+        align-items: center;
+        text-align: center;
+        padding: 80px 20px;
+        padding-left: 20px
+    }
+    h1{
+        font-size: 40px;
+        padding-left: 33px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    p{
+        font-size: 20px;
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+/*large screen*/
+@media(min-width:1200px){
+    .text{
+        padding-left: 5vw; /*view width*/
+        padding-top: 3vh; /*view point*/
+       
+    }
+    h1{
+        font-size: 70px;
+    }
+}
